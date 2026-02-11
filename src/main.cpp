@@ -15,6 +15,14 @@ void setup() {
         while (true);
     }
     display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
+    display.setCursor(0, 0);
+    display.println("Hello, OLED!");
+    display.println("Oled with I2C");
+    display.println("Hello Students");
+    display.display();
+
 }
 
 void loop() {
